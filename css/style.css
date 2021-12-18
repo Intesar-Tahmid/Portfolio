@@ -202,3 +202,60 @@ section.Services .card-wrapper .card:hover{
 section.Services .card-wrapper .card:hover h2, section.Services .card-wrapper .card:hover p{
   color: var(--pure);
 }
+
+section.work{
+  background: var(--light);
+}
+
+section.work .card-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+
+}
+
+section.work .card-wrapper .card{
+  position: relative;
+  height: 250px;
+
+}
+
+section.work .card-wrapper .card .overlay{
+  position: absolute;
+  top : 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(61, 207, 211, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--light);
+  opacity: 0;
+  transition: all .3s ease;
+
+}
+
+section.work .card-wrapper .card:hover .overlay{
+  opacity: 1;
+
+}
+
+section.work .card-wrapper .card .overlay a{
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+section.work .card-wrapper .card img{
+  height: 100%;
+  width: 100%;
+}
+
+section.work .card-wrapper .card .heyhey{
+  text-align: center;
+}
+
+section.work .container .section-heading{
+  margin-bottom: 4rem;
+}
